@@ -31,3 +31,26 @@ Here are some ideas to get you started:
 |     1|               |
 |     2|               |
 |     3|               |
+
+# heading
+
+**this is bold**
+
+*italic*
+~~strightthough~~
+
+``go
+  func (h *Handler) DeleteData(c *fiber.Ctx) error {
+	qID := c.Query("id")
+	if qID == "" {
+		return c.Status(fiber.StatusBadRequest).JSON(apps.ErrResponse(errors.New("required query param - id")))
+	}
+	id, _ := strconv.Atoi(qID)
+
+	if err := h.ServiceOrganizers.Remove(id); err != nil {
+		return c.Status(fiber.StatusBadRequest).JSON(apps.ErrResponse(err))
+	}
+
+	return c.JSON(apps.SuccessResponse("", "Deleted"))
+}
+``
