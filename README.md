@@ -39,7 +39,7 @@ Here are some ideas to get you started:
 *italic*
 ~~strightthough~~
 
-```go
+```javascript
   func (h *Handler) DeleteData(c *fiber.Ctx) error {
 	qID := c.Query("id")
 	if qID == "" {
