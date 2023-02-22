@@ -39,7 +39,7 @@ Here are some ideas to get you started:
 *italic*
 ~~strightthough~~
 
-``go
+```go
   func (h *Handler) DeleteData(c *fiber.Ctx) error {
 	qID := c.Query("id")
 	if qID == "" {
@@ -53,4 +53,4 @@ Here are some ideas to get you started:
 
 	return c.JSON(apps.SuccessResponse("", "Deleted"))
 }
-``
+```
