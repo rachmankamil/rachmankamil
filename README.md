@@ -2,7 +2,7 @@
 
 How are you been? Hope you feel great.
 
-Being an engineer from 2010 make me more robust and know all of things.
+Being an engineer from 2010 make me more robust and know all of things. how do you know me?
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
